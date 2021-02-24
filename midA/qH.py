@@ -1,0 +1,11 @@
+n = int(input())
+set1 = set(input().split())
+m = int(input())
+set2 = set(input().split())
+missed = str(set1-set2)
+no = str(set2-set1) 
+print("Missed students:")
+for student in missed:
+    print("- ",)
+print("Not in the group:")
+print("- {}".format(no))
